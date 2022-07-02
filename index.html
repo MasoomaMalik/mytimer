@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-info m-1">
+
+
+
+    <h1 class="display-1 text-center text-light p-2">Digital Timer</h1>
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-center text-center text-light p-2  ">
+                <div class="col-md">
+                    <p class="  display-1" id="hrs">00</p>
+                </div>
+                <div class="col-md">
+                    <p class="display-1">:</p>
+                </div>
+                <div class="col-md">
+                    <p class="display-1" id="mins">00</p>
+                </div>
+                <div class="col-md">
+                    <p class="display-1">:</p>
+                </div>
+                <div class="col-md">
+                    <p class="display-1" id="secs">00</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex justify-content-center p-2">
+                <canvas id='canvas' class="myCanvas bg-info">
+
+                </canvas>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex p-2 justify-content-center text-light text-center">
+                <div class="col-md">
+                    <button class="btn btn-light m-2 btn-lg" id="startBtn" onclick="start()">Start</button>
+
+                    <button class="btn btn-light m-2 btn-lg" id="stopBtn" onclick="stop()">Stop</button>
+
+                    <button class="btn btn-light m-2 btn-lg" id="resetBtn" onclick="reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex text-center justify-content-center bottom-fixed text-light">
+                <div class="col-md">
+                    <button class="btn btn-light btn-lg" onclick="showInputfields()">Set Timer</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="d-flex text-center justify-content-center bottom-fixed text-light">
+                    <input class="form-control form-control-sm m-1" id="hrField" type="text" placeholder="Enter Hours" aria-label=".form-control-sm example">
+                    <input class="form-control form-control-sm m-1" type="text" id="minField" placeholder="Enter Minutes" aria-label=".form-control-sm example">
+                    <input class="form-control form-control-sm m-1" type="text" placeholder="Enter Seconds" id = "secField" aria-label=".form-control-sm example">
+                    <button id="doneBtn" class="done" ><img src="checked.png" alt="Done" onclick="setTime()"></button>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+</body>
+<script src="app.js"></script>
+
+</html>

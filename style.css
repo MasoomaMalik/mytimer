@@ -1,0 +1,39 @@
+.btn-dark{
+    border-radius: 25% !important;
+}
+
+.myCanvas{
+    width:25vw;
+    height:25vh;
+     /* border: 1px black solid; */
+
+}
+.done img{
+    width:5vw;
+    height:5vh; 
+}
+
+.form-control-sm,form-control-sm
+{
+    visibility: hidden;
+}
+.done{
+    visibility: hidden;
+}
+
+.showInputfields{
+    visibility: visible;
+}
+
+/* .con02 col-md h1{
+    font-size: 40px !important;
+} */
+
+/* body{
+    background-color:rgb(157, 255, 0);
+} */
+
+.display-1, .btn{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+
